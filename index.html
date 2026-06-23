@@ -3,496 +3,799 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>RISHAV BANKA | Lead Cloud Engineer</title>
+<title>Rishav Banka | Lead Cloud Engineer</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-tertiary-fixed": "#1b1b1b",
-                    "inverse-on-surface": "#303030",
-                    "surface": "#131313",
-                    "surface-dim": "#131313",
-                    "on-secondary-container": "#bab8b7",
-                    "on-tertiary-container": "#757575",
-                    "outline": "#988e90",
-                    "secondary-container": "#4a4949",
-                    "surface-container-highest": "#353535",
-                    "on-surface-variant": "#cfc4c5",
-                    "on-secondary-fixed-variant": "#474646",
-                    "on-primary-fixed-variant": "#474747",
-                    "on-error-container": "#ffdad6",
-                    "on-secondary": "#313030",
-                    "error-container": "#93000a",
-                    "on-error": "#690005",
-                    "surface-container-high": "#2a2a2a",
-                    "primary-container": "#000000",
-                    "on-primary": "#303030",
-                    "inverse-primary": "#5e5e5e",
-                    "on-secondary-fixed": "#1c1b1b",
-                    "surface-container-low": "#1b1b1b",
-                    "primary-fixed-dim": "#c6c6c6",
-                    "surface-container": "#1f1f1f",
-                    "primary-fixed": "#e2e2e2",
-                    "secondary-fixed-dim": "#c8c6c5",
-                    "on-tertiary-fixed-variant": "#474747",
-                    "surface-bright": "#393939",
-                    "tertiary": "#c6c6c6",
-                    "surface-tint": "#c6c6c6",
-                    "on-tertiary": "#303030",
-                    "on-surface": "#e2e2e2",
-                    "surface-container-lowest": "#0e0e0e",
-                    "secondary-fixed": "#e5e2e1",
-                    "inverse-surface": "#e2e2e2",
-                    "on-primary-container": "#757575",
-                    "on-primary-fixed": "#1b1b1b",
-                    "background": "#131313",
-                    "tertiary-container": "#000000",
-                    "secondary": "#c8c6c5",
-                    "primary": "#c6c6c6",
-                    "on-background": "#e2e2e2",
-                    "error": "#ffb4ab",
-                    "surface-variant": "#353535",
-                    "outline-variant": "#4c4546",
-                    "tertiary-fixed": "#e2e2e2",
-                    "tertiary-fixed-dim": "#c6c6c6",
-                    "cyan-accent": "#00F5FF"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "section-gap": "120px",
-                    "margin-mobile": "20px",
-                    "gutter": "24px",
-                    "container-max": "1280px",
-                    "stack-gap": "16px"
-            },
-            "fontFamily": {
-                    "body-lg": ["Inter", "sans-serif"],
-                    "body-md": ["Inter", "sans-serif"],
-                    "headline-lg": ["Montserrat", "sans-serif"],
-                    "label-sm": ["Inter", "sans-serif"],
-                    "headline-lg-mobile": ["Montserrat", "sans-serif"],
-                    "headline-md": ["Montserrat", "sans-serif"],
-                    "display-xl": ["Montserrat", "sans-serif"]
-            },
-            "fontSize": {
-                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                    "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700"}],
-                    "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700"}],
-                    "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
-                    "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "0.05em", "fontWeight": "800"}]
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-container-low": "#1b1b1b",
+                        "primary-fixed": "#e2e2e2",
+                        "background": "#080808",
+                        "secondary": "#c8c6c5",
+                        "surface-dim": "#0a0a0a",
+                        "surface-container-lowest": "#050505",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-tertiary": "#303030",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "outline": "#988e90",
+                        "tertiary-fixed": "#e2e2e2",
+                        "primary": "#c6c6c6",
+                        "on-primary": "#303030",
+                        "primary-container": "#000000",
+                        "surface-container": "#141414",
+                        "surface-bright": "#393939",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-background": "#f3f3f3",
+                        "on-primary-container": "#757575",
+                        "surface-variant": "#222222",
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#303030",
+                        "tertiary-container": "#000000",
+                        "surface": "#0a0a0a",
+                        "outline-variant": "#333333",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary": "#313030",
+                        "inverse-primary": "#5e5e5e",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-tint": "#c6c6c6",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-container": "#2a2a2a",
+                        "inverse-surface": "#e2e2e2",
+                        "on-secondary-fixed-variant": "#474646",
+                        "tertiary": "#c6c6c6",
+                        "surface-container-high": "#1a1a1a",
+                        "surface-container-highest": "#222222",
+                        "error": "#ffb4ab",
+                        "on-surface": "#e2e2e2",
+                        "error-container": "#93000a",
+                        "on-tertiary-container": "#757575",
+                        "on-surface-variant": "#a1a1a1",
+                        "on-secondary-container": "#bab8b7",
+                        "cyan-accent": "#00FFFF"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0rem",
+                        "lg": "0rem",
+                        "xl": "0rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "container-max": "1400px",
+                        "stack-gap": "16px",
+                        "gutter": "40px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "display-xl": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700"}],
+                        "label-sm": ["11px", {"lineHeight": "1", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "display-xl": ["96px", {"lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800"}]
+                    }
+                }
             }
-          },
-        },
-      }
+        }
     </script>
 <style>
         body {
-            background-color: #000000;
-            color: #e2e2e2;
+            background-color: #080808;
+            color: #f3f3f3;
             overflow-x: hidden;
+            scroll-behavior: smooth;
         }
-        .glass {
-            background: rgba(18, 18, 18, 0.7);
+        .palantir-nav {
+            background: rgba(8, 8, 8, 0.6);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-card {
+            background: rgba(20, 20, 20, 0.4);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .glass:hover {
-            border-color: #00F5FF;
-            transition: border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .inner-glow-top {
-            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
-        }
-        .bg-glow {
-            background: radial-gradient(circle at center, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
-        }
-        .tech-badge {
-            background: rgba(0, 245, 255, 0.1);
-            border: 1px solid rgba(0, 245, 255, 0.3);
-            color: #00F5FF;
-        }
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #000;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333;
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #00F5FF;
+        .glass-card:hover {
+            background: rgba(20, 20, 20, 0.6);
+            border-color: rgba(0, 255, 255, 0.3);
+            transform: translateY(-2px);
         }
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
-        .section-heading-line {
-            height: 2px;
-            background: linear-gradient(90deg, #00F5FF 0%, transparent 100%);
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 5;
+            background: linear-gradient(0deg, rgba(0, 255, 255, 0) 0%, rgba(0, 255, 255, 0.02) 50%, rgba(0, 255, 255, 0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+        }
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100px; }
+        }
+        .metric-slide {
+            animation: metricSlide 6s infinite;
+        }
+        @keyframes metricSlide {
+            0%, 5% { opacity: 0; transform: translateY(20px) scale(0.98); filter: blur(10px); }
+            15%, 85% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+            95%, 100% { opacity: 0; transform: translateY(-20px) scale(1.02); filter: blur(10px); }
+        }
+        .hero-mesh {
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(0, 255, 255, 0.05) 0%, transparent 50%),
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 60px 60px, 60px 60px;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1), #00FFFF, rgba(255, 255, 255, 0.1), transparent);
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                left: 20px;
+            }
         }
     </style>
 </head>
-<body class="font-body-md text-on-background">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-white/10 inner-glow-top">
-<div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
-<div class="font-headline-md text-headline-md font-bold tracking-tighter text-on-surface cursor-pointer active:scale-95">
-                RISHAV BANKA
-            </div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-cyan-accent transition-colors duration-300" href="#experience">Experience</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-cyan-accent transition-colors duration-300" href="#projects">Initiatives</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-cyan-accent transition-colors duration-300" href="#stack">Stack</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-cyan-accent transition-colors duration-300" href="#impact">Impact</a>
-<a class="text-on-surface-variant font-body-md text-body-md hover:text-cyan-accent transition-colors duration-300" href="#connect">Connect</a>
-<button class="bg-on-surface text-surface px-6 py-2 font-label-sm text-label-sm uppercase tracking-widest hover:bg-cyan-accent transition-all active:scale-95">Resume</button>
-</div>
-<div class="md:hidden">
-<span class="material-symbols-outlined text-on-surface">menu</span>
-</div>
-</div>
+<body class="dark font-body-md text-body-md selection:bg-cyan-accent selection:text-background">
+<!-- Palantir-Style Navigation -->
+<header class="fixed top-0 w-full z-50 palantir-nav h-16 flex items-center">
+<div class="max-w-container-max mx-auto px-gutter w-full flex justify-between items-center">
+<div class="flex items-center gap-12">
+<div class="text-[14px] font-bold tracking-[0.3em] text-white uppercase">RB_ARCHIVE_01</div>
+<nav class="hidden lg:flex items-center gap-10 font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">
+<a class="hover:text-cyan-accent transition-colors duration-300" href="#hero">Command</a>
+<a class="hover:text-cyan-accent transition-colors duration-300" href="#expertise">Capabilities</a>
+<a class="hover:text-cyan-accent transition-colors duration-300" href="#projects">Operations</a>
+<a class="hover:text-cyan-accent transition-colors duration-300" href="#contact">Contact</a>
 </nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden sm:flex items-center gap-2 text-[10px] text-cyan-accent tracking-widest font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-accent animate-pulse"></span> SYSTEM_LIVE
+            </div>
+<a class="px-5 py-2 border border-white/20 text-white font-label-sm text-label-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all" href="#contact">Establish Link</a>
+</div>
+</div>
+</header>
 <main>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-margin-mobile pt-20">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-black/60 z-10"></div>
-<img alt="Cloud Infrastructure Illustration" class="w-full h-full object-cover opacity-50" src="https://lh3.googleusercontent.com/aida/AP1WRLtcyqzql47PQ7oQ4oo5EzI4qVbHVic8Yk8dYlF0AdxYtXvUhJ0dFZrKJGKAhfB_nX0pqW5I_c-wtnEXPMehDKWlQ-OBQmHLwfInF3o3asjIEjsFpx-Vu1GJYHRkMCFxFpvKQJxy6OsOof2f_khLK0avB6vPYz10MzpIvgpI5Ze4gjaIfFPl5AY1mrPurM9bY231GbjgN-NX6V9kdtEhGlx3AAYhtcfhtAhSqUzoXiaw4f8xkAtbizpHuMPj"/>
-<div class="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-black to-transparent z-20"></div>
+<!-- Cinematic Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden hero-mesh" id="hero">
+<div class="scanline"></div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full pt-20">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-8 space-y-12">
+<div class="flex items-center gap-4 opacity-70">
+<div class="h-[1px] w-12 bg-cyan-accent"></div>
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.4em]">Operational Lead</span>
 </div>
-<div class="relative z-30 text-center max-w-4xl mx-auto space-y-8 px-4">
-<div class="relative mx-auto w-32 h-32 md:w-48 md:h-48 mb-8 group">
-<div class="absolute inset-0 bg-cyan-accent/20 rounded-full blur-2xl group-hover:bg-cyan-accent/40 transition-all duration-500"></div>
-<div class="relative w-full h-full rounded-full border-2 border-cyan-accent/30 overflow-hidden glass p-1">
-<img alt="Rishav Banka" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZK_LPOxieVWBmXefoIXe9JCxoCKzpJOTBp3z7kl0axe2EmrbAeaM3KLRRLawucmKvGvjVPFPvwcltq7juXMn42yqiVH1iM8LG4acK-HLccAutBt4FVC35pI8crLlpa6zGoaZIaGJvc0dgbbA56Q2WPlMAoUj-xbAXIC1PKbvJnx8UUn2sgHdQrCyTWie87QdL-DiymZKrVT_CNnVf91clLLCO5xv9SwUn-0V7Nf6IoCt_AmIdD1V1FzdUEoUq4a8TUozjmtiECkn8"/>
-</div>
-<div class="absolute -bottom-1 -right-1 md:-bottom-2 md:-right-2 bg-surface-container-highest border border-cyan-accent/30 p-1.5 md:p-2 rounded-full shadow-lg">
-<span class="material-symbols-outlined text-cyan-accent text-xs md:text-sm">verified</span>
-</div>
-</div>
-<div class="inline-block px-4 py-1 border border-cyan-accent/30 bg-cyan-accent/5 rounded-full mb-4">
-<span class="text-cyan-accent font-label-sm text-label-sm tracking-[0.2em] uppercase">Lead Cloud Engineer @ Sprinklr</span>
-</div>
-<h1 class="font-display-xl text-3xl md:text-display-xl tracking-tighter text-white font-extrabold uppercase leading-tight">
-                    Rishav Banka. <br/>
-<span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-accent to-white">Engineering Resilience.</span>
+<h1 class="font-display-xl text-[56px] md:text-display-xl leading-[0.9] text-on-background max-w-4xl">
+                        Architecting <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-accent to-white/20">Resilient Scale</span>
 </h1>
-<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-2xl mx-auto opacity-80">Orchestrating global multi-cloud infrastructure for Unified-CXM with a focus on high-availability, scalability, and extreme cost efficiency.</p>
-<div class="pt-8 flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center w-full">
-<a class="bg-cyan-accent text-black px-8 md:px-10 py-3 md:py-4 font-label-sm text-label-sm uppercase tracking-[0.2em] font-bold hover:shadow-[0_0_30px_rgba(0,245,255,0.4)] transition-all w-full md:w-auto" href="#experience">View Track Record</a>
-<a class="border border-white/20 text-white px-8 md:px-10 py-3 md:py-4 font-label-sm text-label-sm uppercase tracking-[0.2em] hover:bg-white/5 transition-all w-full md:w-auto" href="#connect">Get in Touch</a>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed border-l border-white/10 pl-6">
+                            Lead Cloud Engineer at Sprinklr. Engineering multi-cloud infrastructure for massive scale. Specialized in high-fidelity observability and distributed security protocols across AWS, GCP, and Azure.
+                        </p>
+<div class="flex flex-col gap-4">
+<button class="group px-8 py-4 bg-white text-black font-bold uppercase tracking-widest text-[11px] flex items-center justify-between hover:bg-cyan-accent transition-all duration-500">
+                                Launch Experience Console <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">north_east</span>
+</button>
+<button class="px-8 py-4 border border-white/10 text-white font-bold uppercase tracking-widest text-[11px] hover:border-white transition-all text-left">
+                                Download System Data (.PDF)
+                            </button>
 </div>
 </div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50 hidden md:block">
-<span class="material-symbols-outlined">expand_more</span>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end">
+<div class="relative group">
+<div class="absolute -inset-0.5 bg-cyan-accent/20 blur opacity-0 group-hover:opacity-100 transition duration-1000"></div>
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000">
+<img alt="Rishav Banka profile" class="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9PlYSKa6cXTWLmX28v0ZWsa4rGPbYQUFForbFYRvt9pprfGwIifltXc04L_XH8D1Srz_XH52GCT3KOe1Feop1HKRMcjJcPj1qajNIpmlIDbmeBY-e7NkB4dlryduBPRNZcR_hhkFsb4Tx7Hz6TFS2knWVwfp4324XhOr07WA0EbP7TErhCk_SvhK2R6XRUPcjbdmIPUJhxft8L7Mueny7OfMHpmPFPjDws3tZcU5N9z63maaEa7dZguG7FZjdaCnvVD9iq8PAcq69"/>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
+<div class="text-[10px] font-bold text-cyan-accent tracking-[0.2em] mb-1">RISHAV BANKA</div>
+<div class="text-[10px] text-white/50 tracking-[0.1em]">ENCRYPTION &amp; CLOUD ARCHITECT</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30">
+<div class="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
 </div>
 </section>
-<!-- Experience Timeline -->
-<section class="py-section-gap px-margin-mobile" id="experience">
-<div class="max-w-container-max mx-auto">
-<div class="flex flex-col items-center mb-16 md:mb-24 text-center">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-4 tracking-tighter">Career Evolution</h2>
-<div class="w-24 h-1 bg-cyan-accent"></div>
+<!-- Automated Metrics Carousel -->
+<section class="py-24 bg-surface-container-lowest border-y border-white/5">
+<div class="max-w-container-max mx-auto px-gutter relative overflow-hidden h-32 md:h-48">
+<div class="flex flex-col items-center justify-center h-full" id="metrics-carousel">
+<!-- Carousel items will be cycled by JS -->
+<div class="metric-item flex flex-col items-center justify-center text-center w-full">
+<div class="text-[48px] md:text-[84px] font-headline-lg text-white mb-2 tracking-tighter">580+</div>
+<div class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.5em]">Global ES Clusters Optimized</div>
 </div>
-<div class="relative space-y-16 md:space-y-24">
-<!-- Vertical Line -->
-<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-white/10 -translate-x-1/2 hidden md:block"></div>
+</div>
+</div>
+</section>
+<!-- Expertise Section -->
+<section class="py-section-gap relative" id="expertise">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-20">
+<div class="space-y-4">
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-widest">Capabilities</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Enterprise Infrastructure <br/>&amp; Security Specialization</h2>
+</div>
+<div class="h-[1px] flex-grow bg-white/5 mx-12 hidden lg:block"></div>
+<p class="text-on-surface-variant max-w-sm text-sm uppercase tracking-wider leading-relaxed">
+                    Deploying sophisticated engineering patterns to manage complexity at the edge of possibility.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+<!-- Cloud & IaC -->
+<div class="glass-card p-10 flex flex-col gap-12">
+<span class="material-symbols-outlined text-cyan-accent text-3xl">cloud_done</span>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md uppercase text-[18px] tracking-widest">Cloud &amp; IaC</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">AWS</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">GCP</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Azure</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Terraform</span>
+</div>
+</div>
+</div>
+<!-- Orchestration -->
+<div class="glass-card p-10 flex flex-col gap-12">
+<span class="material-symbols-outlined text-cyan-accent text-3xl">hub</span>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md uppercase text-[18px] tracking-widest">Containers</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Kubernetes</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Docker</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Helm</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Istio</span>
+</div>
+</div>
+</div>
+<!-- Encryption & Security -->
+<div class="glass-card p-10 flex flex-col gap-12">
+<span class="material-symbols-outlined text-cyan-accent text-3xl">encrypted</span>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md uppercase text-[18px] tracking-widest">Encryption</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">CMK/BYOK</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Thales HSM</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">KMS</span>
+</div>
+</div>
+</div>
+<!-- Observability -->
+<div class="glass-card p-10 flex flex-col gap-12">
+<span class="material-symbols-outlined text-cyan-accent text-3xl">monitoring</span>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md uppercase text-[18px] tracking-widest">Observability</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Prometheus</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Grafana</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">ELK Stack</span>
+</div>
+</div>
+</div>
+<!-- Governance -->
+<div class="glass-card p-10 flex flex-col gap-12">
+<span class="material-symbols-outlined text-cyan-accent text-3xl">security</span>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md uppercase text-[18px] tracking-widest">Governance</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Vault</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">RBAC</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Compliance</span>
+</div>
+</div>
+</div>
+<!-- Development -->
+<div class="glass-card p-10 flex flex-col gap-12">
+<span class="material-symbols-outlined text-cyan-accent text-3xl">code</span>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md uppercase text-[18px] tracking-widest">Development</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Python</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Go</span>
+<span class="px-2 py-1 bg-white/5 text-white/50 text-[10px] font-bold tracking-widest uppercase">Bash</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements Bento Grid -->
+<section class="py-section-gap bg-surface-container-low/30">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-20 text-center space-y-4">
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.3em]">Operational Impact</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Strategic Outcomes</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 h-auto md:min-h-[800px]">
+<!-- Lead Leadership -->
+<div class="md:col-span-2 md:row-span-2 glass-card p-12 flex flex-col justify-end relative overflow-hidden group">
+<div class="absolute top-12 right-12 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[160px]">database</span>
+</div>
+<div class="relative z-10 space-y-6">
+<h3 class="text-headline-md font-headline-md text-white uppercase tracking-widest">High-Scale Fleet Management</h3>
+<p class="text-on-surface-variant leading-relaxed">Spearheaded the optimization of a global Elasticsearch fleet (580+ clusters). Reduced operational overhead by 40% through custom Python orchestration engines and automated lifecycle management for 2500+ nodes.</p>
+<div class="h-1 w-12 bg-cyan-accent"></div>
+</div>
+</div>
+<!-- CMK Achievement -->
+<div class="md:col-span-2 glass-card p-12 flex items-center gap-8 group">
+<div class="w-20 h-20 shrink-0 bg-white/5 flex items-center justify-center group-hover:bg-cyan-accent/10 transition-colors">
+<span class="material-symbols-outlined text-cyan-accent text-4xl">vpn_key</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md mb-2 text-white uppercase text-sm tracking-[0.2em]">Multi-Cloud CMK Platform</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Engineered a unified Customer Managed Key (CMK) and BYOK framework integrating AWS, Azure, and GCP with external Thales HSM infrastructure.</p>
+</div>
+</div>
+<!-- DR Architecture -->
+<div class="md:col-span-2 md:row-span-2 glass-card p-12 flex flex-col justify-end relative overflow-hidden group">
+<div class="absolute top-12 right-12 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[160px]">backup</span>
+</div>
+<div class="relative z-10 space-y-6">
+<h3 class="text-headline-md font-headline-md text-white uppercase tracking-widest">DR Orchestration</h3>
+<p class="text-on-surface-variant leading-relaxed">Modernized global disaster recovery architecture, achieving automated failover for Tier-1 services across diverse cloud regions with RTO &lt; 15 minutes.</p>
+<ul class="text-on-surface-variant space-y-2 text-xs uppercase tracking-widest list-none">
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-accent"></span> Automated regional failover</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-accent"></span> Multi-cloud state sync</li>
+<li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-cyan-accent"></span> Zero-downtime maintenance</li>
+</ul>
+</div>
+</div>
+<!-- Automation -->
+<div class="glass-card p-10 flex flex-col justify-between group">
+<h3 class="text-[12px] font-bold uppercase tracking-widest text-white/70">Platform Automation</h3>
+<span class="material-symbols-outlined text-cyan-accent text-4xl group-hover:scale-110 transition-transform">precision_manufacturing</span>
+</div>
+<!-- Security -->
+<div class="glass-card p-10 flex flex-col justify-between group">
+<h3 class="text-[12px] font-bold uppercase tracking-widest text-white/70">Security at Core</h3>
+<span class="material-symbols-outlined text-cyan-accent text-4xl group-hover:scale-110 transition-transform">verified_user</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Projects -->
+<section class="py-section-gap" id="projects">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-24 flex flex-col lg:flex-row lg:items-end justify-between gap-12">
+<div class="space-y-4">
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.3em]">Case Studies</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Strategic Operations</h2>
+</div>
+<div class="max-w-md space-y-6">
+<p class="text-on-surface-variant text-sm uppercase tracking-wider leading-loose">
+                        High-fidelity deployments demonstrating technical precision and enterprise resilience.
+                    </p>
+<div class="h-[1px] w-full bg-white/10"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+<!-- Main Project -->
+<div class="group col-span-1 md:col-span-2 glass-card p-1">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="relative aspect-video lg:aspect-auto bg-surface-container-high flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-[120px] text-cyan-accent/10">enhanced_encryption</span>
+<div class="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent"></div>
+</div>
+<div class="p-12 flex flex-col justify-center gap-8">
+<div class="flex gap-3">
+<span class="text-[9px] font-bold px-2 py-1 border border-white/10 text-white/50 uppercase tracking-[0.2em]">Encryption</span>
+<span class="text-[9px] font-bold px-2 py-1 border border-white/10 text-white/50 uppercase tracking-[0.2em]">Multi-Cloud</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline-md text-headline-md uppercase tracking-widest">Enterprise BYOK Key Platform</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Architected a centralized platform for managing customer-controlled encryption keys across AWS, Azure, and GCP. Integrated cloud-native KMS with external Thales HSMs.</p>
+</div>
+<a class="text-cyan-accent text-[10px] font-bold uppercase tracking-[0.3em] inline-flex items-center gap-4 group-hover:translate-x-2 transition-transform" href="#">
+                                Access Documentation <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Small Project 1 -->
+<div class="glass-card p-12 group space-y-8">
+<div class="flex items-start justify-between">
+<span class="text-[9px] font-bold px-2 py-1 border border-white/10 text-white/50 uppercase tracking-[0.2em]">Automation</span>
+<span class="material-symbols-outlined text-white/20 group-hover:text-cyan-accent transition-colors">hub</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline-md text-[18px] uppercase tracking-widest">DR Modernization</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Implemented automated regional failover mechanisms for Kubernetes workloads, ensuring high availability for multi-tenant services.</p>
+</div>
+<a class="text-white/50 text-[10px] font-bold uppercase tracking-[0.3em] inline-flex items-center gap-4" href="#">
+                        View Detail <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<!-- Small Project 2 -->
+<div class="glass-card p-12 group space-y-8">
+<div class="flex items-start justify-between">
+<span class="text-[9px] font-bold px-2 py-1 border border-white/10 text-white/50 uppercase tracking-[0.2em]">ELK Stack</span>
+<span class="material-symbols-outlined text-white/20 group-hover:text-cyan-accent transition-colors">analytics</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-headline-md text-[18px] uppercase tracking-widest">ES Fleet Orchestrator</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Developed a robust orchestration engine to manage large-scale Elasticsearch cluster upgrades and health checks across 580+ clusters.</p>
+</div>
+<a class="text-white/50 text-[10px] font-bold uppercase tracking-[0.3em] inline-flex items-center gap-4" href="#">
+                        View Detail <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Career Journey -->
+<section class="py-section-gap bg-surface-container-lowest overflow-hidden">
+<div class="max-w-container-max mx-auto px-gutter relative">
+<div class="mb-24 text-center space-y-4">
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.3em]">Historical Archive</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Trajectory</h2>
+</div>
+<div class="relative timeline-line space-y-32">
+<!-- Lead Cloud Engineer -->
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pr-24 text-right hidden md:block">
+<div class="text-cyan-accent font-bold text-sm tracking-widest mb-2">JUL 2024 - PRESENT</div>
+<h3 class="text-headline-md uppercase tracking-widest text-white">Lead Cloud Engineer</h3>
+</div>
+<div class="relative z-10 w-4 h-4 bg-cyan-accent shrink-0"></div>
+<div class="w-full md:w-1/2 md:pl-24">
+<div class="md:hidden text-cyan-accent font-bold text-sm mb-2">JUL 2024 - PRESENT</div>
+<h3 class="md:hidden text-headline-md uppercase tracking-widest text-white mb-4">Lead Cloud Engineer</h3>
+<div class="glass-card p-10">
+<div class="text-white/50 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">Sprinklr_HQ</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Leading critical infrastructure initiatives including multi-cloud CMK/BYOK platforms and large-scale Elasticsearch fleet optimization. Mentoring senior engineers.</p>
+</div>
+</div>
+</div>
 <!-- Senior Cloud Engineer -->
-<div class="relative grid md:grid-cols-2 gap-gutter items-start md:items-center">
-<div class="md:text-right md:pr-12 order-2 md:order-1">
-<div class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-widest mb-2">2024 — Present</div>
-<h3 class="font-headline-md text-headline-md text-white mb-4">Lead Cloud Engineer <span class="text-on-surface-variant block text-sm font-normal mt-1">Sprinklr • Bangalore</span></h3>
-<div class="space-y-4 text-on-surface-variant font-body-md text-body-md max-w-lg md:ml-auto">
-<p>Spearheading global infrastructure strategy across AWS, Azure, and GCP. Optimized cloud spend (COGS) through aggressive architectural refinements and resource utilization audits.</p>
-<p>Designed and deployed passive DR architecture utilizing cross-cloud database and storage replication, successfully achieving a recovery time objective (RTO) of 8 hours with near real-time RPO.</p>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pr-24 text-right order-2 md:order-1">
+<div class="md:hidden text-cyan-accent font-bold text-sm mb-2 uppercase">Aug 2023 - Jul 2024</div>
+<h3 class="md:hidden text-headline-md uppercase tracking-widest text-white mb-4">Senior Cloud Engineer</h3>
+<div class="glass-card p-10 text-left">
+<div class="text-white/50 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">Sprinklr_HQ</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Focused on Kubernetes lifecycle management, cloud cost optimization using Graviton4, and enhancing observability across distributed microservices.</p>
 </div>
 </div>
-<div class="absolute left-0 md:left-1/2 w-4 h-4 bg-cyan-accent rounded-full -translate-x-1/2 z-10 shadow-[0_0_20px_rgba(0,245,255,0.8)] hidden md:block"></div>
-<div class="md:pl-12 order-1 md:order-2 mb-6 md:mb-0">
-<div class="glass p-6 md:p-8 inline-block">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">cloud_sync</span>
-</div>
+<div class="relative z-10 w-4 h-4 bg-white/20 shrink-0 order-1 md:order-2"></div>
+<div class="w-full md:w-1/2 md:pl-24 hidden md:block order-3">
+<div class="text-white/40 font-bold text-sm tracking-widest mb-2">AUG 2023 - JUL 2024</div>
+<h3 class="text-headline-md uppercase tracking-widest text-white/50">Senior Cloud Engineer</h3>
 </div>
 </div>
 <!-- Senior DevOps Engineer -->
-<div class="relative grid md:grid-cols-2 gap-gutter items-start md:items-center">
-<div class="md:text-right md:pr-12 order-1 md:order-1 hidden md:block">
-<div class="glass p-8 inline-block">
-<span class="material-symbols-outlined text-cyan-accent text-4xl">security</span>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pr-24 text-right hidden md:block">
+<div class="text-white/40 font-bold text-sm tracking-widest mb-2">2021 - 2023</div>
+<h3 class="text-headline-md uppercase tracking-widest text-white/50">Senior DevOps Engineer</h3>
 </div>
-</div>
-<div class="absolute left-0 md:left-1/2 w-4 h-4 bg-white/20 rounded-full -translate-x-1/2 z-10 hidden md:block"></div>
-<div class="md:pl-12 order-2 md:order-2">
-<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-2">2023 — 2024</div>
-<h3 class="font-headline-md text-headline-md text-white mb-4">Senior DevOps Engineer <span class="text-on-surface-variant block text-sm font-normal mt-1">Sprinklr</span></h3>
-<p class="text-on-surface-variant font-body-md max-w-lg text-body-md">Implemented KMS-based CMK (BYOK) encryption for data-at-rest compliance. Automated security hardening of ElasticSearch clusters with authentication and TLS across all global environments.</p>
-<div class="md:hidden mt-6">
-<div class="glass p-6 inline-block">
-<span class="material-symbols-outlined text-cyan-accent text-3xl">security</span>
-</div>
+<div class="relative z-10 w-4 h-4 bg-white/20 shrink-0"></div>
+<div class="w-full md:w-1/2 md:pl-24">
+<div class="md:hidden text-cyan-accent font-bold text-sm mb-2 uppercase">2021 - 2023</div>
+<h3 class="md:hidden text-headline-md uppercase tracking-widest text-white mb-4">Senior DevOps Engineer</h3>
+<div class="glass-card p-10">
+<div class="text-white/50 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">Sprinklr_HQ</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Spearheaded IaC automation using Terraform and Ansible. Managed high-availability production environments and CI/CD reliability.</p>
 </div>
 </div>
 </div>
 <!-- DevOps Engineer -->
-<div class="relative grid md:grid-cols-2 gap-gutter items-start md:items-center">
-<div class="md:text-right md:pr-12 order-2 md:order-1">
-<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-2">2020 — 2023</div>
-<h3 class="font-headline-md text-headline-md text-white mb-4">DevOps Engineer <span class="text-on-surface-variant block text-sm font-normal mt-1">Sprinklr</span></h3>
-<p class="text-on-surface-variant font-body-md max-w-lg md:ml-auto text-body-md">Managed and supported large-scale microservices platforms utilizing Jenkins, Kubernetes, and ElasticSearch. Developed automation solutions via Ansible to streamline repetitive provisioning and configuration tasks.</p>
-</div>
-<div class="absolute left-0 md:left-1/2 w-4 h-4 bg-white/20 rounded-full -translate-x-1/2 z-10 hidden md:block"></div>
-<div class="md:pl-12 order-1 md:order-2 mb-6 md:mb-0">
-<div class="glass p-6 md:p-8 inline-block">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">settings_input_component</span>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pr-24 text-right order-2 md:order-1">
+<div class="md:hidden text-cyan-accent font-bold text-sm mb-2 uppercase">2020 - 2021</div>
+<h3 class="md:hidden text-headline-md uppercase tracking-widest text-white mb-4">DevOps Engineer</h3>
+<div class="glass-card p-10 text-left">
+<div class="text-white/50 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">Sprinklr_HQ</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Foundational work in cloud infrastructure management, monitoring setups, and cluster maintenance for enterprise scale.</p>
 </div>
 </div>
+<div class="relative z-10 w-4 h-4 bg-white/20 shrink-0 order-1 md:order-2"></div>
+<div class="w-full md:w-1/2 md:pl-24 hidden md:block order-3">
+<div class="text-white/40 font-bold text-sm tracking-widest mb-2">2020 - 2021</div>
+<h3 class="text-headline-md uppercase tracking-widest text-white/50">DevOps Engineer</h3>
 </div>
 </div>
+<!-- Cloud Infrastructure Intern -->
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="w-full md:w-1/2 md:pr-24 text-right hidden md:block">
+<div class="text-white/40 font-bold text-sm tracking-widest mb-2 uppercase">2016 - 2020</div>
+<h3 class="text-headline-md uppercase tracking-widest text-white/50">Cloud Infrastructure Engineer</h3>
 </div>
-</section>
-<!-- Strategic Initiatives & Projects -->
-<section class="py-section-gap px-margin-mobile bg-surface-container-lowest" id="projects">
-<div class="max-w-container-max mx-auto">
-<div class="mb-16 md:mb-20">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-4">Strategic Initiatives</h2>
-<div class="section-heading-line w-48 mb-8"></div>
+<div class="relative z-10 w-4 h-4 bg-white/20 shrink-0"></div>
+<div class="w-full md:w-1/2 md:pl-24">
+<div class="md:hidden text-cyan-accent font-bold text-sm mb-2 uppercase">2016 - 2020</div>
+<h3 class="md:hidden text-headline-md uppercase tracking-widest text-white mb-4">Cloud Infrastructure Engineer</h3>
+<div class="glass-card p-10">
+<div class="text-white/50 text-[10px] font-bold tracking-[0.3em] uppercase mb-4">PESIT / Internship Years</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Academic and internship focus on computer science engineering, deep learning projects, and early cloud architecture experiments.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- DR Implementation -->
-<div class="glass p-8 md:p-10 flex flex-col h-full border-l-4 border-l-cyan-accent shadow-[0_0_20px_rgba(0,245,255,0.15)]">
-<div class="flex items-center justify-between mb-8">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">backup</span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">2025</span>
-</div>
-<h4 class="font-headline-md text-headline-md text-white mb-4">DR Implementation</h4>
-<p class="text-on-surface-variant text-body-md mb-6 flex-grow">Multi-cloud service continuity architecture ensuring platform survival during regional outages with automated failover benchmarks.</p>
-<div class="pt-4 border-t border-white/10">
-<span class="text-cyan-accent font-label-sm text-label-sm uppercase tracking-widest">Multi-Cloud Resilience</span>
-</div>
-</div>
-<!-- Encryption at Layers -->
-<div class="glass p-8 md:p-10 flex flex-col h-full border-l-4 border-l-cyan-accent shadow-[0_0_20px_rgba(0,245,255,0.15)]">
-<div class="flex items-center justify-between mb-8">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">encrypted</span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">2023-2025</span>
-</div>
-<h4 class="font-headline-md text-headline-md text-white mb-4">Encryption at Layers</h4>
-<p class="text-on-surface-variant text-body-md mb-6 flex-grow">Securing data-at-rest using CMK integrated with Thales KMS and Azure Confidential VMs for zero-knowledge infrastructure security.</p>
-<div class="pt-4 border-t border-white/10">
-<span class="text-cyan-accent font-label-sm text-label-sm uppercase tracking-widest">Confidential Computing</span>
-</div>
-</div>
-<!-- SRE Health Dashboard -->
-<div class="glass p-8 md:p-10 flex flex-col h-full border-l-4 border-l-cyan-accent shadow-[0_0_20px_rgba(0,245,255,0.15)]">
-<div class="flex items-center justify-between mb-8">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">monitoring</span>
-<span class="text-on-surface-variant font-label-sm text-label-sm">2023-2024</span>
-</div>
-<h4 class="font-headline-md text-headline-md text-white mb-4">SRE Health Dashboard</h4>
-<p class="text-on-surface-variant text-body-md mb-6 flex-grow">Centralized Kibana dashboards with automated service health tracking and anomaly detection via historical metric analysis.</p>
-<div class="pt-4 border-t border-white/10">
-<span class="text-cyan-accent font-label-sm text-label-sm uppercase tracking-widest">Observability Stack</span>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Tech Stack Grid -->
-<section class="py-section-gap px-margin-mobile bg-surface-container-low" id="stack">
-<div class="max-w-container-max mx-auto">
-<div class="mb-16 md:mb-20">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-4">Advanced Tech Stack</h2>
-<p class="text-on-surface-variant font-body-lg text-body-md md:text-body-lg max-w-2xl">
-                        Leveraging enterprise-grade tooling to manage complexity and maintain high-concurrency global systems.
-                    </p>
+<!-- Leadership Section -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="space-y-12">
+<div class="space-y-4">
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.3em]">Leadership @ Scale</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Engineering Culture</h2>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Tech Items -->
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">cloud</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">CLOUD</div>
+<ul class="space-y-10">
+<li class="flex gap-6 group">
+<span class="text-cyan-accent font-bold text-sm tracking-widest">01</span>
+<div class="space-y-2">
+<h4 class="font-bold text-white uppercase text-[14px] tracking-widest">Fleet Orchestration Engine</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Engineered custom Python logic to manage upgrades for 2500+ nodes, ensuring zero downtime and 99.99% availability.</p>
 </div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">AWS, Azure &amp; GCP</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">Expert multi-cloud orchestration and cross-provider disaster recovery.</p>
+</li>
+<li class="flex gap-6 group">
+<span class="text-cyan-accent font-bold text-sm tracking-widest">02</span>
+<div class="space-y-2">
+<h4 class="font-bold text-white uppercase text-[14px] tracking-widest">Unified Encryption Platform</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Delivered a multi-cloud CMK/BYOK platform that supports regulated enterprise workloads globally.</p>
 </div>
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl" style="font-variation-settings: 'FILL' 1;">hub</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">CORE</div>
+</li>
+<li class="flex gap-6 group">
+<span class="text-cyan-accent font-bold text-sm tracking-widest">03</span>
+<div class="space-y-2">
+<h4 class="font-bold text-white uppercase text-[14px] tracking-widest">Graviton4 Migration Strategy</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Led performance-driven migration to Graviton4, optimizing infrastructure costs and increasing throughput.</p>
 </div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">Kubernetes</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">Advanced container orchestration and elastic scaling across regions.</p>
+</li>
+<li class="flex gap-6 group">
+<span class="text-cyan-accent font-bold text-sm tracking-widest">04</span>
+<div class="space-y-2">
+<h4 class="font-bold text-white uppercase text-[14px] tracking-widest">Mentorship &amp; Culture</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Established best practices for SRE and Cloud engineering teams, fostering high ownership.</p>
 </div>
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">database</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">DATA</div>
+</li>
+</ul>
 </div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">ElasticSearch &amp; Redis</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">Managing high-availability caching and complex search indexing layers.</p>
-</div>
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">lock</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">SEC</div>
-</div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">CMK / Security</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">Key management, encryption-at-rest, and confidential computing.</p>
-</div>
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">sync_alt</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">CI/CD</div>
-</div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">Jenkins &amp; Ansible</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">Automated build pipelines and idempotent configuration management.</p>
-</div>
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">lan</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">NET</div>
-</div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">Networking</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">VPC peering, global load balancing, and secure transit gateways.</p>
-</div>
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">air</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">FLOW</div>
-</div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">Airflow</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">Data pipeline orchestration and automated workflow management.</p>
-</div>
-<div class="glass p-8 group transition-all duration-500 hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<span class="material-symbols-outlined text-cyan-accent text-3xl md:text-4xl">architecture</span>
-<div class="tech-badge px-3 py-1 text-[10px] md:text-label-sm rounded-full uppercase tracking-tighter">IAC</div>
-</div>
-<h4 class="font-headline-md text-lg md:text-headline-md text-white mb-3">Terraform</h4>
-<p class="text-on-surface-variant font-body-md text-sm md:text-body-md">Infrastructure as Code for predictable environment provisioning.</p>
+<div class="glass-card p-1 relative overflow-hidden group">
+<div class="w-full aspect-square bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-1000" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSbqGxjHvyIlI5WesBjRGdcEdc1UDW6CYrtWDkTNBMAjQ6eyjwDpxfiFPasW5qILU4OPneYpxmohpRbI8C5zMo5N96YkQv6HguiuLpPPNbvR5QJlvbxiJtsZlshb8yXg3XVgVpcLrp1viTkJ6hcLihnESKFJU_E1csM3rQ1qe91ECAuCGUMBDxP8FMxhOEVmHXLMldzsSpAwX_VU0RSoaZK9IPd1cdLVyf_q0lFCGDbZ9Ar_H3ulpa0QxsFS4Ndfz37sVLCy92-XoZ')"></div>
+<div class="absolute inset-0 bg-cyan-accent/5 opacity-50"></div>
 </div>
 </div>
 </div>
 </section>
-<!-- Impact Section -->
-<section class="py-section-gap px-margin-mobile" id="impact">
-<div class="max-w-container-max mx-auto">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
-<div class="max-w-2xl">
-<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-4 tracking-tighter">Measurable Impact</h2>
-<p class="text-on-surface-variant font-body-lg text-body-md md:text-body-lg">Precision engineering for financial efficiency and global system resilience.</p>
+<!-- Engineering Insights -->
+<section class="py-section-gap bg-surface-container-low/20 border-t border-white/5">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-20">
+<div class="space-y-4">
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.3em]">Intel Repository</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Insights</h2>
+</div>
+<a class="text-cyan-accent text-[10px] font-bold uppercase tracking-[0.3em] hover:translate-x-2 transition-transform inline-flex items-center gap-2" href="#">Access All Logs <span class="material-symbols-outlined text-sm">east</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<div class="glass-card p-12 flex flex-col gap-6">
+<span class="text-[9px] font-bold text-cyan-accent tracking-[0.3em] uppercase">Security_LOG_01</span>
+<h3 class="font-headline-md text-[20px] uppercase tracking-widest leading-snug text-white">Implementing BYOK: A Practical Guide</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed">Deep dive into HSM integration and cloud KMS orchestration for security-conscious architectures.</p>
+<div class="mt-auto pt-8 border-t border-white/5 flex justify-between items-center text-[9px] font-bold text-white/30 tracking-[0.2em] uppercase">
+<span>7 MIN READ</span>
+<span>JUN 2024</span>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-auto">
-<div class="glass md:col-span-2 p-8 md:p-10 flex flex-col justify-between overflow-hidden relative group">
-<div class="absolute -right-10 -bottom-10 opacity-5 group-hover:opacity-10 transition-opacity hidden md:block">
-<span class="material-symbols-outlined text-[200px]">savings</span>
+<div class="glass-card p-12 flex flex-col gap-6">
+<span class="text-[9px] font-bold text-cyan-accent tracking-[0.3em] uppercase">Arch_LOG_02</span>
+<h3 class="font-headline-md text-[20px] uppercase tracking-widest leading-snug text-white">Scaling ES to 2PB: Lessons</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed">A deep dive into shard management, data tiering, and why manual rebalancing is your enemy at scale.</p>
+<div class="mt-auto pt-8 border-t border-white/5 flex justify-between items-center text-[9px] font-bold text-white/30 tracking-[0.2em] uppercase">
+<span>5 MIN READ</span>
+<span>MAY 2024</span>
+</div>
+</div>
+<div class="glass-card p-12 flex flex-col gap-6">
+<span class="text-[9px] font-bold text-cyan-accent tracking-[0.3em] uppercase">Devops_LOG_03</span>
+<h3 class="font-headline-md text-[20px] uppercase tracking-widest leading-snug text-white">Terraform Multi-Cloud State</h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 leading-relaxed">Exploring best practices for remote state, locking, and cross-account access in complex environments.</p>
+<div class="mt-auto pt-8 border-t border-white/5 flex justify-between items-center text-[9px] font-bold text-white/30 tracking-[0.2em] uppercase">
+<span>8 MIN READ</span>
+<span>MAR 2024</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-gap relative" id="contact">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div class="space-y-12">
+<div class="space-y-4">
+<span class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.3em]">Communication Link</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Secure Channel</h2>
+</div>
+<div class="space-y-10">
+<div class="flex items-center gap-8">
+<div class="w-12 h-12 border border-white/10 flex items-center justify-center text-cyan-accent">
+<span class="material-symbols-outlined">location_on</span>
 </div>
 <div>
-<span class="text-cyan-accent font-label-sm text-label-sm uppercase tracking-widest">Financial Efficiency</span>
-<h3 class="font-headline-lg text-2xl md:text-headline-lg mt-4 mb-6">Reduced Cloud <br/> Spend (COGS)</h3>
-</div>
-<p class="text-on-surface-variant text-body-md md:text-body-lg max-w-lg">
-                            Drove aggressive architectural shifts across AWS, Azure, and GCP that significantly lowered operational expenditure without performance trade-offs.
-                        </p>
-</div>
-<div class="glass p-8 md:p-10 flex flex-col justify-center text-center">
-<div class="text-4xl md:text-5xl font-extrabold text-cyan-accent mb-2">8h RTO</div>
-<div class="font-label-sm text-label-sm uppercase tracking-[0.2em]">Near Real-time RPO</div>
-</div>
-<div class="glass p-8 md:p-10 flex flex-col justify-between">
-<span class="material-symbols-outlined text-cyan-accent text-4xl md:text-5xl mb-4">verified_user</span>
-<h4 class="font-headline-md text-xl md:text-headline-md text-white">Zero-knowledge <br/> Encryption</h4>
-<p class="text-on-surface-variant text-body-md mt-4">Implemented BYOK/CMK encryption layers integrated with Thales KMS for enterprise compliance.</p>
-</div>
-<div class="glass md:col-span-2 p-8 md:p-10 flex flex-col md:flex-row items-center gap-8 bg-glow">
-<div class="flex-1">
-<span class="text-cyan-accent font-label-sm text-label-sm uppercase tracking-widest">System Resilience</span>
-<h3 class="font-headline-lg text-2xl md:text-headline-lg mt-4 mb-4">Multi-Cloud Continuity</h3>
-<p class="text-on-surface-variant text-body-md">Orchestrated seamless database and storage replication across major cloud providers to guarantee 99.99% availability during regional disasters.</p>
-</div>
-<div class="w-48 h-48 md:w-1/3 aspect-square relative shrink-0">
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="w-full h-full border border-dashed border-cyan-accent/20 rounded-full animate-[spin_20s_linear_infinite]"></div>
-<div class="absolute w-2/3 h-2/3 border border-cyan-accent/40 rounded-full animate-[spin_15s_linear_infinite_reverse]"></div>
-<span class="material-symbols-outlined text-cyan-accent text-4xl md:text-6xl">language</span>
+<div class="text-[10px] font-bold text-white/40 tracking-widest uppercase mb-1">Geographic Origin</div>
+<div class="text-white tracking-widest">BANGALORE, INDIA</div>
 </div>
 </div>
+<div class="flex items-center gap-8">
+<div class="w-12 h-12 border border-white/10 flex items-center justify-center text-cyan-accent">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<div class="text-[10px] font-bold text-white/40 tracking-widest uppercase mb-1">Email Terminal</div>
+<div class="text-white tracking-widest">RISHAV@SRE.ENGINEERING</div>
 </div>
 </div>
-</div>
-</section>
-<!-- Connect Section -->
-<section class="py-section-gap px-margin-mobile relative bg-surface-container-highest" id="connect">
-<div class="max-w-container-max mx-auto text-center space-y-8 md:space-y-12">
-<h2 class="font-display-xl text-3xl md:text-display-xl uppercase tracking-tighter leading-tight">Ready for the Next <br/> <span class="text-cyan-accent">Scale Event?</span></h2>
-<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-2xl mx-auto">Currently based in Bangalore, India. Let's discuss high-impact DevOps infrastructure, multi-cloud strategy, or security at scale.</p>
-<div class="flex flex-col md:flex-row flex-wrap justify-center gap-4 md:gap-6 mt-12">
-<a class="group flex items-center justify-center md:justify-start gap-4 border border-white/10 glass px-6 md:px-8 py-3 md:py-4 hover:border-cyan-accent transition-all w-full md:w-auto" href="mailto:rishav.banka1@gmail.com">
-<span class="material-symbols-outlined text-cyan-accent">mail</span>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-xs md:text-label-sm">rishav.banka1@gmail.com</span>
+<div class="flex gap-4 pt-6">
+<a class="w-12 h-12 bg-white/5 flex items-center justify-center border border-white/10 hover:border-cyan-accent transition-all" href="#">
+<img alt="GitHub" class="w-5 h-5 opacity-50 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDblZzJsBG2ivSDw87orhWQxTHjOCseHIuwQWxnxWqrAUQNAiW4Z_gNDn9VjF0MQHpzvlLCpsJQezdIz5diYxSbSnX-LSCGcSrgora4K44wqSZzaTGODD4DBMMBcNBx1TzwElFGGPbUJIthUuDh5n-stxfJXykWYTEyxRhDwDdj8Ez2YgGhC6oRJPbOffCfYNs_Sa8l4ZE4Kh199QEZUk15t0-Bs2lthbja_jFBA5K3LHwuGK26X4OWrJfXXk2AnxZ-pcVjxWn1-dpn"/>
 </a>
-<a class="group flex items-center justify-center md:justify-start gap-4 border border-white/10 glass px-6 md:px-8 py-3 md:py-4 hover:border-cyan-accent transition-all w-full md:w-auto" href="https://linkedin.com/in/bankarishav" target="_blank">
-<span class="material-symbols-outlined text-cyan-accent">link</span>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-xs md:text-label-sm">linkedin.com/in/bankarishav</span>
+<a class="w-12 h-12 bg-white/5 flex items-center justify-center border border-white/10 hover:border-cyan-accent transition-all" href="#">
+<img alt="LinkedIn" class="w-5 h-5 opacity-50 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp4xE35FdqfcEk0_VGYqU8CFi11Xrpj76A1pwj5yfPuJt5HFX5c6tqgGhTddoGiHNkO4lmkvLbI7Q2cvoBLi2TPcyf39Uo0K3M8ahx9aiYS7xXH36Nx-crixatMvAPz-n5E7fKf_yvRCGJtArNbfVqGHBD3vFXWUGqhELNXiOjaPyk5BwsFlyFakobLwufpZhlhKdtTeqgoVqLLEOuXKsu72dZxdkUaEMGGNKXJ08MkPTjkzTXt6pVSqCIlnB7pGel52U2XzP7XDHX"/>
 </a>
-<div class="flex items-center justify-center md:justify-start gap-4 border border-white/10 glass px-6 md:px-8 py-3 md:py-4 w-full md:w-auto">
-<span class="material-symbols-outlined text-cyan-accent">call</span>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-xs md:text-label-sm">+91 7019765030</span>
+</div>
+</div>
+</div>
+<div>
+<form class="glass-card p-12 space-y-10">
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">Identification</label>
+<input class="w-full bg-transparent border-b border-white/10 focus:border-cyan-accent outline-none py-3 px-0 transition-all text-white" placeholder="ENTER FULL NAME" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">Digital Address</label>
+<input class="w-full bg-transparent border-b border-white/10 focus:border-cyan-accent outline-none py-3 px-0 transition-all text-white" placeholder="ENTER WORK EMAIL" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">Transmission</label>
+<textarea class="w-full bg-transparent border-b border-white/10 focus:border-cyan-accent outline-none py-3 px-0 transition-all text-white resize-none" placeholder="DESCRIBE THE OPERATION" rows="4"></textarea>
+</div>
+<button class="w-full py-5 bg-white text-black font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-cyan-accent transition-all duration-500">Initiate Uplink</button>
+</form>
 </div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-surface-container-lowest w-full py-16 md:py-20 border-t border-white/5">
-<div class="flex flex-col md:flex-row justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto gap-8 text-center">
-<div class="font-headline-md text-headline-md font-bold text-on-surface">RISHAV BANKA</div>
-<div class="text-on-tertiary-container font-label-sm text-[10px] md:text-label-sm uppercase tracking-widest order-3 md:order-2">
-                © 2024 RISHAV BANKA. ENGINEERED FOR SCALE.
+<footer class="bg-surface-container-lowest border-t border-white/5 w-full py-24">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-2 space-y-8">
+<div class="text-[16px] font-bold tracking-[0.5em] text-white uppercase">RB_ARCHIVE_FINAL</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-sm uppercase tracking-wider">
+                Engineering resilient systems and high-fidelity security platforms. Optimized for global availability.
+            </p>
+</div>
+<div>
+<h4 class="text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-white">System Index</h4>
+<ul class="space-y-4 text-[10px] font-bold text-white/40 uppercase tracking-[0.2em]">
+<li><a class="hover:text-cyan-accent transition-colors" href="#">Manifesto</a></li>
+<li><a class="hover:text-cyan-accent transition-colors" href="#">Terminal_v2</a></li>
+<li><a class="hover:text-cyan-accent transition-colors" href="#">Source_Repo</a></li>
+<li><a class="hover:text-cyan-accent transition-colors" href="#">Uptime_Status</a></li>
+</ul>
+</div>
+<div class="flex flex-col justify-between">
+<div class="space-y-4">
+<h4 class="text-[10px] font-bold uppercase tracking-[0.3em] text-white">Core Status</h4>
+<div class="flex items-center gap-3 text-cyan-accent text-[10px] font-bold tracking-widest">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-accent opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-accent"></span>
+</span>
+                    NOMINAL_OPERATION
+                </div>
+</div>
+<div class="text-[9px] font-bold text-white/20 tracking-[0.3em] uppercase mt-12 md:mt-0">
+                © 2024 RB_ARCHIVE. ALL RIGHTS RESERVED.
             </div>
-<div class="flex gap-6 md:gap-8 justify-center flex-wrap order-2 md:order-3">
-<a class="text-on-tertiary-container font-label-sm text-xs md:text-label-sm uppercase tracking-widest hover:text-cyan-accent transition-all opacity-80" href="https://linkedin.com/in/bankarishav">LinkedIn</a>
-<a class="text-on-tertiary-container font-label-sm text-xs md:text-label-sm uppercase tracking-widest hover:text-cyan-accent transition-all opacity-80" href="#">GitHub</a>
-<a class="text-on-tertiary-container font-label-sm text-xs md:text-label-sm uppercase tracking-widest hover:text-cyan-accent transition-all opacity-80" href="mailto:rishav.banka1@gmail.com">Email</a>
 </div>
 </div>
 </footer>
 <script>
-        // Smooth scroll for anchors
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+    // Metrics Carousel Data
+    const metrics = [
+        { val: "580+", label: "Global ES Clusters Managed" },
+        { val: "2500+", label: "Distributed Infrastructure Nodes" },
+        { val: "Multi-Cloud", label: "Unified BYOK Encryption Platform" },
+        { val: "3", label: "Global Cloud Providers Integrated" },
+        { val: "99.99%", label: "System Availability Standards" },
+        { val: "100+", label: "Automated Operational Workflows" }
+    ];
 
-        // Parallax effect for hero background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroImage = document.querySelector('section img');
-            if(heroImage && window.innerWidth > 768) {
-                heroImage.style.transform = `translateY(${scrolled * 0.3}px)`;
+    const carousel = document.getElementById('metrics-carousel');
+    let currentIndex = 0;
+
+    function updateMetric() {
+        carousel.innerHTML = `
+            <div class="metric-item metric-slide flex flex-col items-center justify-center text-center w-full">
+                <div class="text-[48px] md:text-[84px] font-headline-lg text-white mb-2 tracking-tighter">${metrics[currentIndex].val}</div>
+                <div class="font-label-sm text-label-sm text-cyan-accent uppercase tracking-[0.5em] px-margin-mobile">${metrics[currentIndex].label}</div>
+            </div>
+        `;
+        currentIndex = (currentIndex + 1) % metrics.length;
+    }
+
+    // Initial load and interval
+    updateMetric();
+    setInterval(updateMetric, 6000);
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth'
+                });
             }
         });
-    </script>
+    });
+
+    // Simple Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.glass-card').forEach(card => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(20px)";
+        card.style.transition = "all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)";
+        observer.observe(card);
+    });
+</script>
 </body></html>
